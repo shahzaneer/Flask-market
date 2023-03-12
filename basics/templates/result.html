@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+
+<!-- <link rel="stylesheet" href="basics\static\style\style.css">
+<script src="basics\static\script\script.js"></script> -->
+
+
+<link rel="stylesheet" href="{{ url_for('static' ,filename = 'style/style.css') }}">
+<script src="{{ url_for('static', filename = 'script/script.js') }}"></script>
+
+
+</head>
+<body>
+    <!-- ! this is Jinja2 technique -->
+    <!-- ! IF statement -->
+    <!-- <h1>The Result is {{result}}</h1>
+    {% if score >=50  %}  
+    <h2> You have passed !</h2>
+    {% else%}
+    <h2>You have failed </h2>
+    {% endif %} -->
+
+<!-- ! For loop -->
+    <!-- <table border="1">
+        {% for key,value in completeResult.items() %}
+        <tr>
+        <th>{{ key }}</th>
+        <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+    </table> -->
+
+<!-- ! Comment  -->
+    <h1>Shahzaneer Ahmed    {# Manam Adna sana khuan e Muhammad! #} </h1>
+</body>
+</html>
